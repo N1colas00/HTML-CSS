@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Café Tech</title>
+    <style>
+
+        .tabela {
+            display: grid;
+            place-items: center;
+           
+            
+        }
+
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            
+        }
+
+        table tbody tr:hover {
+            background-color: #f2f2f2
+
+        }
+    
+        table {
+            border-collapse: collapse;
+            width: 90%;
+        }
+        
+        td,
+        th {
+            border: 1px solid  #ccc;
+            padding: 12px;   
+        }
+
+        thead {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        tfoot {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Cardápio Café Tech</h2>
+    <h4>Tabela de preços - Atualizada em Agosto/2025</h4>
+    <div class="tabela">
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Catgoria</th>
+                <th>Preço (R$)</th>
+                <th>Promoção</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Café Expresso</td>
+                <td>Tradicional</td>
+                <td>5,00</td>
+                <td>---</td>
+            </tr>
+            <tr>
+                <td>Duplo</td>
+                <td>8,00</td>
+                <td>Leve 2 por 14,00</td>
+                
+            </tr>
+            <tr>
+                <td>Capuccino</td>
+                <td>Especial</td>
+                <td>7,50</td>
+                <td>---</td>
+            </tr>
+            <tr>
+                <td colspan="2">Combo Café + Pão de Queijo</td>
+                <td>9,90</td>
+                <td>Gratis 1 refil de café</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Preços sujeitos a alteração sem aviso prévio</td>
+            </tr>
+        </tfoot>
+    </table>
+    </div>
+
+    
+</body>
+</html>

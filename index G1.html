@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Loja Simples</title>
+    <style>
+
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 0%;
+            margin: 0%;
+            text-align: center;
+            
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            padding: 20px;
+        
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+            
+        }
+
+        nav a:hover {
+        text-decoration: underline;
+
+        }
+
+        nav a {
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        #inicio, #produtos {
+            text-align: center;
+            color: #000;
+        }
+
+        .servicos-container {
+            display: flex;
+            gap: 70px;
+            padding: 20px;
+                
+        }
+
+        .card {
+            background: #fff;
+            padding: 10px;
+            max-width: auto;
+            border-radius: 3%;
+            width: 50%;
+
+        }
+
+        .servicos-container :hover {
+            background-color: #bfbfbf;
+            cursor: default;    
+
+        }
+
+        .card img {
+            max-width: 100%;    
+
+        }
+
+        .form {
+            max-width: 500px; 
+            margin: 40px auto; 
+            padding: 30px;
+            background-color:#fff;
+            border-radius: 8px;
+            color: #000;
+         
+        }
+
+        input, textarea {
+            width: 100%; 
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+            
+        }
+
+        section {
+            padding: 20px;
+            
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #eee;
+            color: #555;
+            padding: 20px;
+            font-size: 14px;
+                    
+        }
+
+        button {
+            background-color: #45a049; 
+            color: white; 
+            padding: 5px 20px; 
+            margin: 10px;
+            border: none; 
+            border-radius: 5px; 
+            font-size: 16px; 
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+        }
+
+        button:hover {
+            background-color: #45a049;
+
+        }
+
+    </style>
+    </head>
+    <body>
+
+    <header>
+        <h1>Minha Loja</h1>
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Boas-Vindas</h2>
+            <p>Seja bem-vindo a nossa loja de venda de carros semi novos, adquira o seu já por preços incriveis.</p>
+        </section>
+
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="servicos-container">
+                <div class="card">
+                    <img src="https://placehold.co/200x150" alt="carr">
+                    <h3>Carro 01</h3>
+                    <p>R$70.000,00</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/200x150" alt="carr">
+                    <h3>Carro 02</h3>
+                    <p>R$90.000,00</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/200x150" alt="carr">
+                    <h3>Carro 03</h3>
+                    <p>R$110.000,00</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/200x150" alt="carr">
+                    <h3>Carro 04</h3>
+                    <p>R$130.000,00</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://placehold.co/200x150" alt="carr">
+                    <h3>Carro 05</h3>
+                    <p>R$320.000,00</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="form">
+                <form action="#" method="post">
+                    <h2>Contato</h1>
+                    
+                    <div class="nome">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" maxlength="100" placeholder="Digite seu nome" required>
+                    </div>
+                
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div>
+                        <label for="mensagem">Mensagem:</label><br>
+                        <textarea id="mensagem" rows="4" cols="40"></textarea>
+                    </div>
+
+                    <div class="botao">
+                        <button type="submit">Enviar</button> 
+                    </div>
+                </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Minha Loja. Todos os direitos reservados</p>
+    </footer>
+
+    </body>
+</html>
